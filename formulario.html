@@ -1,0 +1,53 @@
+<form action=formulario.html method=post enctype="multipart/form-data">
+	<p>Nombre <Input type=text name=nombre size=25 maxlenght=50></p>
+	<p>E-mail <input type=text name=Email size=25 maxlenght=50></p>
+	<input type=number min=0 max=100 step=20 value=50 name=valor><br>
+	<input type=checkbox name=c1 checked>
+	<input type=checkbox name=c2 >
+	<input type=checkbox name=c3 >	<br>
+	<input type=radio name=radio value=uno checked><br>
+	<input type=radio name=radio value=dos>
+	<input type=radio name=radio value=tres> <br>
+	<select name=menu>
+		<option selected value=uno>uno</option>
+		<optgroup label dos>
+			<option value=dos_a>dos - a </option>
+			<option value=dos_b>dos - b </option>
+		</optgroup>
+	</select>
+<br>
+	<textarea name=texto_largo cols=20 rows=6>
+Esto está contenido en el cuadro del editor
+	</textarea><br>
+	<input name=sexo list=sexo>
+		<datalist id=sexo>
+			<option value=hombre>
+			<option value=mujer>
+		</datalist>
+	<br>
+	<p>Introduca su contraseña: </p><input type="password"><br>
+	<p>Prueba de RANGE</p><input type="range" min="1" max="11" step="2">
+	<p>Prueba imagen</p> <input type="image" src="imagenes/Prueba">
+	<p>Prueba hidden</p> <input type="hidden" value="kasdnfkla">
+	<p>Prueba Email</p> <input type="email" pattern=".+@hotmail.com" size="30" placeholder="Pon un email">
+	<p>Prueba file</p> <input type="file" accept=".jpg">
+	<p>Prueba fecha</p> <input type="date" min="1" max="12" step="1">
+	<p>Prueba fecha 2</p> <input type="month"> <br>
+	<input type="time" min="00:00" max="23:59" step="00:01"><br>
+	<input type="week" min="2021-W1" max="2021-W50" required> <br>
+	<input type="datetime-local" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00" step="1">
+	<p>Prueba color</p> <input type="color"> <br>
+	 <!--<button name="reset" type="reset">Limpiar<img src="Mis imágenes/Kent.jpg" alt="Borrar"></button>-->
+	 <p>Prueba video</p> 
+	 <video controls width="250" preload="auto">
+		<source src="/perfiles/dam1alu13/Downloads/VideoPrueba.mp4" type="video/mp4" >
+			Su navegador no admite videos
+	 </video>
+	 <p>Prueba i-frame</p> <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" 
+	 title="YouTube video player" frameborder="0" 
+	 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+	</iframe>
+	<P>Prueba RESET</P> <input type="reset">
+	<p><input type=submit name=Enviar Value=Enviar></p>
+
+</form>
